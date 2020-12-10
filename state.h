@@ -29,7 +29,7 @@ public:
     int get_population();
 };
 
-class president_state : public state
+class president_state : public state         //класс наследования
 {
 private :
     string name_pre;
@@ -42,7 +42,7 @@ public:
     virtual void write_to_file(ofstream& stream);
 };
 
-class state_status : public state
+class state_status : public state            //класс наследования
 {
 private:
     string status;
