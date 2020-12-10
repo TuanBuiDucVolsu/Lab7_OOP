@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-class state
+class state                     //базовый класса
 {
 private:
     string country;
@@ -29,7 +29,7 @@ public:
     int get_population();
 };
 
-class president_state : public state         //класс наследования
+class president_state : public state         //производный класс (при открытом наследовании)
 {
 private :
     string name_pre;
@@ -42,7 +42,7 @@ public:
     virtual void write_to_file(ofstream& stream);
 };
 
-class state_status : public state            //класс наследования
+class state_status : public state            //производный класс (при открытом наследовании)
 {
 private:
     string status;
